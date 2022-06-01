@@ -9,9 +9,13 @@
 </head>
 <body>
 	<img hidden class="logo" id="Logo" src="Marketing_A_Plus_Logo.png">
-	<canvas></canvas>
+	<div style="position:relative;">
+		<canvas id="graph" style="z-index: -1;"></canvas>
+		<canvas id="ball" style="position:absolute;left: 0;top: 0;z-index: 0;"></canvas>
+		<canvas id="A+" style="position:absolute;left: 0;top: 0;z-index: 1;"></canvas>
+	</div>
 	<p></p>
-	<div class="grid-container">
+	<div class="grid-container" style="position:relative;">
 		<div class="grid-item">
 			<div>
 			<div class="text-background">Ball X Velocity: <input type="text" name="ballxvalue" id="bxval"></div>
